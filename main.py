@@ -3,7 +3,7 @@ import csv
 with open('my_wallets.txt', 'r') as my_wallets, \
         open('eligibility_list.csv', 'r') as wallets_eligible, \
         open('my_luck_wallets.txt', 'w', encoding='utf-8') as my_luck_wallets:
-    eligible_wallets = {row[0]: row[1] for row in csv.reader(wallets_eligible)}
+    eligible_wallets = {row[0].lower(): row[1] for row in csv.reader(wallets_eligible)}
     count_luck_wallets = 0
 
     for line in my_wallets:
