@@ -17,4 +17,4 @@ with open('my_wallets.txt', 'r') as my_wallets, \
     if count_luck_wallets == 0:
         print("Я всё проверил, Ваших кошельков нет в списке счастливчиков", file=my_luck_wallets)
 
-print(f'одобрено {count_luck_wallets} кошельков')
+print(f'Одобрено {count_luck_wallets} кошельков')
